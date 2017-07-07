@@ -13,6 +13,7 @@ public class Team {
     mDescription = description;
     mCreatedAt = LocalDateTime.now();
     instances.add(this);
+    mId = instances.size();
   }
 
   public String getDescription() {
@@ -33,5 +34,9 @@ public class Team {
 
   public int getID(){
     return mId;
+  }
+
+  public static Team find(ind id) {
+    return instances.get(id - 1);
   }
 }
