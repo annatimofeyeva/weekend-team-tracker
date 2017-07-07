@@ -1,5 +1,10 @@
 <!--index.vtl-->
 <h1> Meet our Teams for today's hack-a-thon!</h1>
+if($team)
+  <p>Current team</p>
+  <p>$team.getDescription()</p>
+#else
+<p>No team!</p>
 
 <p>Add a new Team:</p>
 
