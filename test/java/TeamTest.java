@@ -11,6 +11,11 @@ public class TeamTest {
     Team myTeam = new Team("Hulugans");
     assertEquals(true, myTeam instanceof Team);
   }
-
+  @Test
+  public void clear_emptiesAllTeamsFromArrayList_0() {
+    Team myTeam = new Team("Hulugans");
+    Team.clear();
+    assertEquals(0, Team.all().size());
+  }
 
 }

@@ -8,15 +8,15 @@
     #end
   </ul>
 #else
-  <p>No teams!</p>
+  <p>No Teams registrated yet! Please, add your Team name.</p>
 #end
 
 <p>Add a new Team:</p>
 
 <form action="/teams" method="post">
-  <label for="description">Team Description</label>
+  <label for="description">Team Name</label>
   <input id="description" name="description" type="text">
 
-  <button type="submit" class="btn btn-default">Add new Team!</button>
+  <button type="submit" class="btn btn-default">Add!</button>
 </form>
 <!--index.vtl-->
