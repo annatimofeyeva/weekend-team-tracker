@@ -36,7 +36,7 @@ public class Team {
     return mId;
   }
 
-  public static Team find(ind id) {
+  public static Team find(int id) {
     return instances.get(id - 1);
   }
 }

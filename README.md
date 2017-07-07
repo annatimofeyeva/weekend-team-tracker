@@ -22,7 +22,11 @@ Web application, written in java that allows a Startup Weekend or hack-a-thon co
 
 2. App will allow to add new Teams and new Team's members and will displays these lists on the appropriate web pages correctly.
 
-3. App should be deploy to live-hosted site (Heroku).
+3. App should display each Team member's profile.
+
+4. App should display search results according to ?????.
+
+5. App should be deploy to live-hosted site (Heroku).
 
 
 ## Technologies Used
