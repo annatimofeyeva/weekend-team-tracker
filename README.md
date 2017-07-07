@@ -7,12 +7,11 @@
 Web application, written in java that allows a Startup Weekend or hack-a-thon coordinator (user) to track teams and their members.
 
 * User can go to the homepage of the App and see a list of Teams.
+* User should be able to add a new Team and then viewing a list of Teams.
 * User can view the members of each Team.
-* User should be able to add a new Team and then viewing a list of the Teams.
 * User should be able to add a new Team member and then viewing a list of these Team members.
-* User should be able to view each member's profiles.
-* User should be able to view each member's profiles.
-* User should be able to do a search within the Team or Members lists according to ?????.
+* User should be able to view each Team member's profiles.
+* User should be able to do a search within the "Team" or "Members" lists according to ?????.
 * The application should be deploy to Heroku:
 * Link to live-hosted site (Heroku):
 
