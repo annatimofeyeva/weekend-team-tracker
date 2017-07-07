@@ -1,11 +1,15 @@
 <!--index.vtl-->
 <h1> Meet our Teams for today's hack-a-thon!</h1>
-if($teams)
+
+#if ($teams)
   <ul>
-  #foreach ($team in $teams)
-    <li>$team.getDescription()</li>
-  #end
+    #foreach ($team in $teams)
+      <li>$team.getDescription()</li>
+    #end
   </ul>
+#else
+  <p>No teams!</p>
+#end
 
 <p>Add a new Team:</p>
 
