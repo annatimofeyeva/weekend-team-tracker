@@ -2,52 +2,46 @@ import org.junit.*;
 import static org.junit.Assert.*;
 import java.time.LocalDateTime;
 
-public class MemberTest {
+public class MemberTest{
 
-@Test
-  public void Member_instantiatesCorrectly_true() {
-    Member myMember = new Member("Anna");
-    assertEquals(true, myMember instanceof Member);
+  @Test
+    public void Member_instantiatesCorrectly_true() {
+      Member myMember = new Member("Anna");
+      assertEquals(true, myMember instanceof Member);
   }
 
   @Test
-  public void Task_instantiatesWithDescription_String() {
-    Task myTask = new Task("Mow the lawn");
-    assertEquals("Mow the lawn", myTask.getDescription());
-  }
+    public void Member_instantiatesWithDescription_String() {
+      Member myMember = new Member("Anna Timofeeva");
+      assertEquals("Anna Timofeeva", myMember.getDescription());
+    }
 
   @Test
-  public void isCompleted_isFalseAfterInstantiation_false() {
-    Task myTask = new Task("Mow the lawn");
-    assertEquals(false, myTask.isCompleted());
-  }
+    public void all_returnsAllInstancesOfMember_true() {
+      Member firstMember = new Member("Anna Timofeeva");
+      Member secondMember = new Member("Alena Golovina");
+      assertEquals(true, Member.all().contains(firstMember));
+      assertEquals(true, Member.all().contains(secondMember));
+    }
 
   @Test
-  public void all_returnsAllInstancesOfTask_true() {
-    Task firstTask = new Task("Mow the lawn");
-    Task secondTask = new Task("Buy groceries");
-    assertEquals(true, Task.all().contains(firstTask));
-    assertEquals(true, Task.all().contains(secondTask));
-  }
+    public void clear_emptiesAllMembersFromArrayList_0() {
+      Member myMember = new Member("Anna Timofeeva");
+      Member.clear();
+      assertEquals(0, Member.all().size());
+    }
 
   @Test
-  public void clear_emptiesAllTasksFromArrayList_0() {
-  Task myTask = new Task("Mow the lawn");
-  Task.clear();
-  assertEquals(0, Task.all().size());
-  }
+    public void getId_membersInstantiateWithAnID_1() {
+      Member.clear();
+      Member myMember = new Member("Anna Timofeeva");
+      assertEquals(1, myMember.getID());
+    }
 
   @Test
-  public void getId_tasksInstantiateWithAnID_1() {
-    Task.clear();  // Remember, the test will fail without this line! We need to empty leftover Tasks from previous tests!
-    Task myTask = new Task("Mow the lawn");
-    assertEquals(1, myTask.getId());
-  }
-  @Test
-    public void find_returnsTaskWithSameId_secondTask() {
-      Task firstTask = new Task("Mow the lawn");
-      Task secondTask = new Task("Buy groceries");
-      assertEquals(Task.find(secondTask.getId()), secondTask);
-  }
-
+    public void find_returnsMemberWithSameId_secondmember() {
+      Member firstMember = new Member("Anna Timofeeva");
+      Member secondMember = new Member("Alena Golovina");
+      assertEquals(Member.find(secondMember.getID()), secondMember);
+    }
 }
