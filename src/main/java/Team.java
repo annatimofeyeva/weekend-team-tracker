@@ -1,10 +1,18 @@
-import java.time.LocalDateTime;
+/*import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List;*/
 
 
 public class Team {
-  private String mDescription;
+  public Team(String description){
+
+  }
+}
+
+
+
+
+/*  private String mDescription;
   private LocalDateTime mCreatedAt;
   private static List<Team> instances = new ArrayList<Team>();
   private int mId;
@@ -40,3 +48,4 @@ public class Team {
     return instances.get(id - 1);
   }
 }
+*/
