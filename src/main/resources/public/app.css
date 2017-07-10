@@ -5,11 +5,18 @@ h1{
     text-align: center;
 }
 #link1{
-  padding-top: 20px;
   font-size: 30px;
   text-align: center;
 }
 #link2{
   font-size: 30px;
   text-align: center;
+}
+#link3{
+  font-size: 30px;
+  text-align: center;
+  color: #932a0a;
+}
+img{
+  margin-top: 30px;
 }

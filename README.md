@@ -10,10 +10,9 @@ Web application, written in java that allows a Startup Weekend or hack-a-thon co
 * User should be able to add a new Team and then viewing a list of Teams.
 * User can view the members of each Team.
 * User should be able to add a new Team member and then viewing a list of these Team members.
-* User should be able to view each Team member's profiles.
-* User should be able to do a search within the "Team" or "Members" lists according to ?????.
-* The application should be deploy to Heroku:
-* Link to live-hosted site (Heroku):
+* User should be able to redirects to the page with details about the Startup weekend event.
+* The application should be deploy to Heroku.
+
 
 
 ## SPECS
@@ -24,7 +23,7 @@ Web application, written in java that allows a Startup Weekend or hack-a-thon co
 
 3. App should display each Team member's profile.
 
-4. App should display search results according to ?????.
+4. App should redirects to the Startup weekend event site.
 
 5. App should be deploy to live-hosted site (Heroku).
 
