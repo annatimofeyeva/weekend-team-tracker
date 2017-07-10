@@ -28,7 +28,13 @@ Web application, written in java that allows a Startup Weekend or hack-a-thon co
 5. App should be deploy to live-hosted site (Heroku).
 
 
+## Setup/Installation Requirements
+
+* _Navigate to the project folder.  On the terminal, type "gradle run", then enter the following in the browser's URL bar: http://localhost:4567/._
+
+
 ## Technologies Used
+
 * Java
 * jUnit
 * Gradle
